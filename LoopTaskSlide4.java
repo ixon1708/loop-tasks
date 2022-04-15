@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class LoopTaskSlide4 {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(3 + " * " + i + " = " + (3 * i));
+        }
+        /* первый вариант для улучшения
+        for (int i = 1; i <= 10; i++) {
+            for (int j = 1; j <= 10; j++) {
+                System.out.println(i + " * " + j + " = " + (i * j));
+            }
+            System.out.println();
+        }
+         */
+        /* второй вариант для улучшения
+        Scanner scanner = new Scanner(System.in);
+        int number = scanner.nextInt();
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(number + " * " + i + " = " + (number * i));
+        }
+         */
+    }
+}
